@@ -35,4 +35,6 @@ for word in word_bank:
 
 sorted_usage_dict = sorted(usage_dict.items(), key=lambda x: x[1])
 sorted_usage_dict = sorted_usage_dict[::-1]
-print(sorted_usage_dict)
+
+for pair in sorted_usage_dict:
+    print(f"{pair[0]} is used {pair[1]} times.")
